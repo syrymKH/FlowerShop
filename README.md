@@ -19,21 +19,22 @@ The project includes:
 4. searchBar for quick find
 5. embedded customized tableView in view controller
 6. tabBarController to switch between products section and additional information
-![iPhone 14 Pro Max](https://github.com/syrymKH/iOS/assets/127158103/2d5c1549-826a-4475-bc71-9e83edca2f6b)
-![iPhone 14 Pro Max 3](https://github.com/syrymKH/iOS/assets/127158103/7f8e0739-62d1-4ab9-b53b-74505d078ce5)
+![iPhone 14 Pro Max](https://github.com/syrymKH/FlowerShop/assets/127158103/e7ac8489-4e1d-4c67-938f-9fab6d8509b1)
+![iPhone 14 Pro Max 3](https://github.com/syrymKH/FlowerShop/assets/127158103/7b39df1d-87d1-4684-9d06-2ebc060b09f9)
 
 (Catalog Screen)
 1. embedded collectionView in viewController
 2. pop-up alert for goods sort
-![iPhone 14 Pro Max 1](https://github.com/syrymKH/iOS/assets/127158103/fa840996-0135-4f4e-b7f4-95b01f952a1d)
+![iPhone 14 Pro Max 1](https://github.com/syrymKH/FlowerShop/assets/127158103/ff6ec2f9-507a-4e10-b85c-4551edf83b8a)
 
 (Product Screen)
 1. In-detail product's description with price and picture
 2. option to share product's picture or description
-![iPhone 14 Pro Max 2](https://github.com/syrymKH/iOS/assets/127158103/32b24e9c-f2c1-40d8-bcfb-5a55b6e66dd6)
+![iPhone 14 Pro Max 2](https://github.com/syrymKH/FlowerShop/assets/127158103/b5a3043c-424e-4867-b418-44ac5319f650)
 
 (Order Screen)
 1. textFields for order details
 2. option to choose payment method
 3. static tableView for country code along with searchBar for quick find
-![Order Screen ](https://github.com/syrymKH/iOS/assets/127158103/32b4a309-3607-4d93-a3df-5b70544e6
+![iPhone 14 Pro Max Order Screen ](https://github.com/syrymKH/FlowerShop/assets/127158103/de29a948-a30c-4d83-8ceb-11200c81eb25)
+
