@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="xNn-kr-Q1M">
+            <objects>
+                <tableViewController id="Erj-PR-lmr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wFq-Nc-gBa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xcB-it-qjj">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xcB-it-qjj" id="RYh-c1-5N0">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Erj-PR-lmr" id="eom-G4-tj2"/>
+                            <outlet property="delegate" destination="Erj-PR-lmr" id="pEF-2i-OFB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb7-Of-fiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="26"/>
+        </scene>
+        <!--MenuTVC-->
+        <scene sceneID="LLx-vo-IVC">
+            <objects>
+                <tableViewController storyboardIdentifier="MenuTableVC" id="LVq-Cl-emP" customClass="MenuTVC" customModule="Syrym_s_FlowerShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Lde-dT-ALh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="98" id="bJS-53-27j" customClass="MenuTableViewCell" customModule="Syrym_s_FlowerShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="98"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bJS-53-27j" id="iTg-6l-P6p">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1b-n4-D92">
+                                            <rect key="frame" x="16" y="7" width="361" height="84"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1MO-Gn-DrS">
+                                                    <rect key="frame" x="10" y="23" width="40" height="38.666666666666671"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="E1g-JZ-Rli"/>
+                                                        <constraint firstAttribute="width" constant="40" id="MtD-AK-jUt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6vQ-0v-ltz">
+                                                    <rect key="frame" x="66" y="20" width="285" height="44"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T22-6C-I8g">
+                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sub title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfD-nj-Qg0">
+                                                            <rect key="frame" x="0.0" y="27" width="285" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="6vQ-0v-ltz" secondAttribute="trailing" constant="10" id="7YK-Eq-SFZ"/>
+                                                <constraint firstItem="1MO-Gn-DrS" firstAttribute="centerY" secondItem="J1b-n4-D92" secondAttribute="centerY" id="EhB-tS-Jkh"/>
+                                                <constraint firstAttribute="bottom" secondItem="6vQ-0v-ltz" secondAttribute="bottom" constant="20" symbolic="YES" id="FT2-h6-4R5"/>
+                                                <constraint firstItem="6vQ-0v-ltz" firstAttribute="leading" secondItem="1MO-Gn-DrS" secondAttribute="trailing" constant="16" id="IlB-CM-Mp2"/>
+                                                <constraint firstItem="6vQ-0v-ltz" firstAttribute="top" secondItem="J1b-n4-D92" secondAttribute="top" constant="20" symbolic="YES" id="McR-SY-bSJ"/>
+                                                <constraint firstItem="1MO-Gn-DrS" firstAttribute="leading" secondItem="J1b-n4-D92" secondAttribute="leading" constant="10" id="O6G-MS-YBv"/>
+                                                <constraint firstItem="6vQ-0v-ltz" firstAttribute="leading" secondItem="J1b-n4-D92" secondAttribute="leading" constant="66" id="bSo-nU-aCn"/>
+                                                <constraint firstItem="6vQ-0v-ltz" firstAttribute="centerY" secondItem="J1b-n4-D92" secondAttribute="centerY" id="vPA-hA-1Ny"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="J1b-n4-D92" firstAttribute="leading" secondItem="iTg-6l-P6p" secondAttribute="leading" constant="16" id="450-2d-Hlt"/>
+                                        <constraint firstItem="J1b-n4-D92" firstAttribute="top" secondItem="iTg-6l-P6p" secondAttribute="top" constant="7" id="VnG-oh-tZj"/>
+                                        <constraint firstAttribute="trailing" secondItem="J1b-n4-D92" secondAttribute="trailing" constant="16" id="geZ-vq-czD"/>
+                                        <constraint firstAttribute="bottom" secondItem="J1b-n4-D92" secondAttribute="bottom" constant="7" id="mmi-AU-CjI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="imageForMenu" destination="1MO-Gn-DrS" id="qKR-uB-Z8c"/>
+                                    <outlet property="subtitleForMenu" destination="BfD-nj-Qg0" id="vJj-ro-UeH"/>
+                                    <outlet property="titleForMenu" destination="T22-6C-I8g" id="kNs-SE-42e"/>
+                                    <outlet property="viewForMenu" destination="J1b-n4-D92" id="1mV-bE-KsX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LVq-Cl-emP" id="ZCT-YG-r5N"/>
+                            <outlet property="delegate" destination="LVq-Cl-emP" id="Ky1-Jr-eGD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="jyl-ly-8ZP">
+                        <barButtonItem key="backBarButtonItem" title="      " id="OoJ-ur-dvW"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUN-YO-abN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191.6030534351144" y="14.788732394366198"/>
+        </scene>
+        <!--In Detail MenuTVC-->
+        <scene sceneID="k57-fM-3oL">
+            <objects>
+                <tableViewController storyboardIdentifier="InDetailMenuTableViewCell" id="m0a-lL-DDo" customClass="InDetailMenuTVC" customModule="Syrym_s_FlowerShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="IOt-mC-BbI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="131" id="URM-MY-3oP">
+                                <rect key="frame" x="0.0" y="50" width="393" height="131"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="URM-MY-3oP" id="1gF-Mg-y6s">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="m0a-lL-DDo" id="mEy-Zv-MPn"/>
+                            <outlet property="delegate" destination="m0a-lL-DDo" id="GCl-um-mUk"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFS-j4-sbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
